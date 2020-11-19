@@ -18,7 +18,8 @@ from django.urls import path
 from . import macros
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('home/', macros.home),
     path('', macros.home),
+    path('reversed/', macros.reverse, name='reverse'),
 ]
